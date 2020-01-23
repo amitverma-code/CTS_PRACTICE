@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>input number bro</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+x = document.getElementById("numb").value;
+  if (isNaN(x) || x < 1 || x > 100) {
+    text = "not valid input bro";
+  } else {
+    text = "yes you are right bro";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
